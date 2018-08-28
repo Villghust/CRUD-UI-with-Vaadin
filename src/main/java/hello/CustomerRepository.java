@@ -8,3 +8,5 @@ public interface CustomerRepository extends JpaRepository<Customer, Long> {
 
     List<Customer> findByLastNameStartsWithIgnoreCase(String lastName);
 }
+
+// TODO Esta classe deve estar no módulo impl ... database.repository

@@ -77,3 +77,5 @@ public class MainView extends VerticalLayout {
     // end::listCustomers[]
 
 }
+
+// TODO Copiei essa classe também..

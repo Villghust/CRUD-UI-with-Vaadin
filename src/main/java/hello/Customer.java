@@ -50,3 +50,6 @@ public class Customer {
     }
 
 }
+
+// TODO Explorar o uso do Lombok
+// TODO Esta classe deve estar no módulo impl ... database.model

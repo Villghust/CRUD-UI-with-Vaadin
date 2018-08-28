@@ -20,6 +20,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * In a real world application you'll most likely using a common super class for all your
  * forms - less code, better UX.
  */
+
 @SpringComponent
 @UIScope
 public class CustomerEditor extends VerticalLayout implements KeyNotifier {
@@ -31,11 +32,11 @@ public class CustomerEditor extends VerticalLayout implements KeyNotifier {
      */
     private Customer customer;
 
-    /* Fields to edit properties in Customer entity */
+    /* Campos para editar propriedades na entidade Customer */
     TextField firstName = new TextField("First name");
     TextField lastName = new TextField("Last name");
 
-    /* Action buttons */
+    /* Botões Ativos */
     // TODO why more code?
     Button save = new Button("Save", VaadinIcon.CHECK.create());
     Button cancel = new Button("Cancel");
@@ -51,7 +52,7 @@ public class CustomerEditor extends VerticalLayout implements KeyNotifier {
 
         add(firstName, lastName, actions);
 
-        // bind using naming convention
+        // Ligar usando nomes convencionais
         binder.bindInstanceFields(this);
 
         // Configure and style components
@@ -116,3 +117,5 @@ public class CustomerEditor extends VerticalLayout implements KeyNotifier {
     }
 
 }
+
+// TODO Estudar com calma esta classe (Sim, essa eu copiei na cara de pau porque não sei praticamente nada de Front).
